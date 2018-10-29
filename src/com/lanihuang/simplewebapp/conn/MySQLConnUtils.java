@@ -14,11 +14,10 @@ public class MySQLConnUtils {
     String dbName = "heroku_2c893dd9e4fdf5d";
     String userName = "bc7a403442c80e";
     String password = "d85f72d1";
-    return getMySQLConnection();
+    return getMySQLConnectionDB();
   }
 
-  public static Connection getMySQLConnection(String hostName, String dbName,
-      String userName, String password) throws SQLException,
+  public static Connection getMySQLConnectionDB() throws SQLException,
     ClassNotFoundException {
 
     // Declare the class driver for MySQL DB
